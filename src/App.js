@@ -69,7 +69,10 @@ function App() {
 }
 
   return (
+    <div className='tic-tac-toe'>
+    <h1 className='heading'>Tic-Tac-Toe Game</h1>
     <div className='App'>
+      
       <div className='board'>
         <div className='row'>
           <Square val={board[0]} chooseSquare={() => chooseSquare(0)} />
@@ -87,6 +90,7 @@ function App() {
           <Square val={board[8]} chooseSquare={() => chooseSquare(8)} />
         </div>
       </div>
+    </div>
     </div>
   );
 }
